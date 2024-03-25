@@ -1,0 +1,186 @@
+/*
+#bg {
+    background-color: #000000;
+}
+
+#screenContents {
+    color: #ffffff;
+}
+*/
+
+/* https://www.motoslave.net/sugarcube/2/docs/#html */
+
+/* FOR FONTS */
+
+@font-face {
+    font-family: "IBMPlexMono";
+    src: url("/home/account/Documents/writ/if/seedcomp/Annihilation Ocean/game/IBMPlexMono-Regular.ttf");
+}
+
+@font-face {
+  	font-family: "DejaVuSansMono";
+  	src: url("/home/account/Documents/writ/if/seedcomp/Annihilation Ocean/game/DejaVuSansMono.ttf");
+}
+
+/*! <<replacelink>> macro set for SugarCube 2.x */
+.revision-span-in {
+	opacity: 0;
+}
+.revision-span:not(.revision-span-out) {
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.revision-span-out {
+	position: absolute;
+	opacity: 0;
+}
+
+/*
+TAGS
+*/
+
+.europa-memory #passages {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Arial;
+  font-weight: normal;
+}
+
+/* makes fade in slower */
+/* https://twinery.org/forum/discussion/6383/how-to-make-slow-fade-in-text-on-sugarcube */
+.slowfade .macro-repeat-insert,
+.slowfade .macro-timed-insert {
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+/* prevents scrolling */
+.antioverflow .passage {
+  overflow: hidden;
+}
+
+/* removes container border */
+.noborder #passages {
+  outline: 0px;
+  border: 0px;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/*
+INDIVIDUAL STYLING
+*/
+
+/* For Europa's machine */
+.machineVoice {
+  font-family: IBMPlexMono, mono;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* For Europa's denizens */
+.machineVoice2 {
+  font-family: IBMPlexMono, mono;
+  font-style: italic;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+/* For the dead */
+.deadVoice {
+  font-family: DejaVuSansMono, mono;
+  font-weight: bold;
+  color: #ff4444;
+}
+
+/* UNUSED BORDERS
+
+static
+  border: 3px solid;
+  border-image: url("https://media.giphy.com/media/XuBNdP9Pb7W9i/giphy.gif");
+  border-image-slice: 4;
+
+Manonamora's Space Border
+  outline: 1px solid black;
+  border: 4px solid black;
+  box-shadow: inset hsl(0, 0%, 14.9%) 0 0px 0px 4px, inset hsla(0, 0%, 15%, .8) 0 -1px 5px 4px, inset hsla(0, 0%, 0%, .25) 0 -1px 0px 7px, inset hsla(0, 0%, 50%, .7) 0 2px 1px 7px, hsla(0, 0%, 50%, .15) 0 -5px 6px 4px, hsla(0, 0%, 0%, .5) 0 5px 6px 4px;
+  border-radius: 2em;
+
+*/
+
+/*
+GENERAL STYLE
+*/
+
+:root {
+    --color1: #fabb33;
+    --colorb: #fcdd55;
+    --color2: #fff;
+    --shadow: #ddd;
+}
+
+#passages {
+  font-size: 100%;
+  font-family: Garuda, monospace;
+  font-weight: bold;
+}
+
+/*
+Adapted from Manonamora's Space UI - Seedcomp 2023
+*/
+
+/* Background */
+#bg {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  background-image: url("https://wallup.net/wp-content/uploads/2015/12/118790-sky-clouds-abstract-gray-748x421.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  position: fixed;
+  filter: blur(11px);
+}
+
+/* Container */
+#passages {
+  height: 80vh;
+  width: 70vw;
+  position: absolute;
+  
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  
+  min-height: 300px;
+  min-width: 100px;
+  max-height: 900px;
+  max-width: 700px;
+  
+  background-color: #000000;
+  
+  border: 2px solid;
+  border-image: repeating-linear-gradient(0deg, #666, #111, #666 150%) 1;
+  
+  /* Prevent images from extending past div bounds */
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Styles for passages themselves */
+.passage {
+  height: 94%;
+  margin: 3%;
+  overflow: auto;
+}
+
+a {
+  color: #777777;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

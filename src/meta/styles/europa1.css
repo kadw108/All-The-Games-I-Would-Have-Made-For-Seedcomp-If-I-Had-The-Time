@@ -1,0 +1,142 @@
+/*
+#bg {
+    background-color: #000000;
+}
+
+#screenContents {
+    color: #ffffff;
+}
+*/
+
+/* https://www.motoslave.net/sugarcube/2/docs/#html */
+
+/*! <<replacelink>> macro set for SugarCube 2.x */
+.revision-span-in {
+	opacity: 0;
+}
+.revision-span:not(.revision-span-out) {
+	-webkit-transition: 1s;
+	transition: 1s;
+}
+.revision-span-out {
+	position: absolute;
+	opacity: 0;
+}
+
+/*
+TAGS
+*/
+
+#passages {
+  background-color: #000B2B;
+  color: #e7fffd;
+  font-family: mono;
+  font-weight: normal;
+}
+
+a {
+  color: #00C5F1;
+}
+
+a:hover {
+  color: #0095B7;
+  text-decoration: underline;
+}
+
+/* makes fade in slower */
+/* https://twinery.org/forum/discussion/6383/how-to-make-slow-fade-in-text-on-sugarcube */
+.slowfade .macro-repeat-insert,
+.slowfade .macro-timed-insert {
+	-webkit-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+/* prevents scrolling */
+.antioverflow .passage {
+  overflow: hidden;
+}
+
+/* removes container border */
+.noborder #passages {
+  outline: 0px;
+  border: 0px;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/*
+GENERAL STYLE
+*/
+
+:root {
+    --color1: #fabb33;
+    --colorb: #fcdd55;
+    --color2: #fff;
+    --shadow: #ddd;
+}
+
+#passages {
+  font-size: 100%;
+  font-family: Garuda, monospace;
+  font-weight: bold;
+}
+
+/*
+Adapted from Manonamora's Space UI - Seedcomp 2023
+*/
+
+/* Background */
+#bg {
+  height: 100%;
+  width: 100%;
+  background-color: #0e0e0e;
+  background-image: url("assets/europa1.jpg");
+  background-attachment: fixed;
+  background-size: initial;
+  position: fixed;
+  filter: blur(15px);
+}
+
+/* Container */
+#passages {
+  height: 80vh;
+  width: 70vw;
+  position: absolute;
+  
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  
+  min-height: 300px;
+  min-width: 100px;
+  max-height: 900px;
+  max-width: 700px;
+  
+  background-color: #000000;
+  
+  border: 2px solid;
+  border-image: repeating-linear-gradient(0deg, #666, #111, #666 150%) 1;
+  
+  /* Prevent images from extending past div bounds */
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/* Styles for passages themselves */
+.passage {
+  height: 94%;
+  margin: 3%;
+  overflow: auto;
+}
+
+a {
+  color: #777777;
+}
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}

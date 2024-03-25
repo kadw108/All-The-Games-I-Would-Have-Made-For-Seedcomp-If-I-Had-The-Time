@@ -1,0 +1,22 @@
+<!-- [html-validate-disable-block] -->
+<snippet name="annihilationOcean" styles="meta/ifdb_files/ifdb.css" tags="noWrapper">
+
+<% 
+$(function () {
+    const snippet = document.getElementById("iff-snippet");
+
+    const title = document.createElement("h1");
+    title.innerText = "Annihilation Ocean";
+
+    const description = document.createElement("div");
+    description.innerHTML = `
+        <p>Yesterday, I disposed of the other technician's body.</p>
+    `;
+
+    const ifdbPage = mainScript.genIfdbPage(
+        title, description, "annihilationOcean1"
+    )
+    snippet.append(ifdbPage);
+});
+%>
+</snippet>

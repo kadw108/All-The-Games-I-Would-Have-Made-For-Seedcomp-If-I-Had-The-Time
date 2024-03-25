@@ -1,0 +1,52 @@
+{
+    "story": {
+        "title": "All The Games I Would Have Made For Seedcomp If I Had The Time (Which I Did Not) (Oh Well There's Always Next Year",
+        "author": {
+            "name": "KADW"
+        },
+        "version": "1.0.0"
+    },
+    "scripts": {
+        "story": [
+            "meta/typeScriptMain.js",
+            "meta/storyScript.js"
+        ],
+        "global": [
+            "meta/globalScript.js"
+        ]
+    },
+    "styles": {
+        "story": [
+            "meta/styles/reset.css",
+            "meta/styles/fonts.css"
+        ],
+        "tags": [
+            {
+                "rule": "defaultStyle",
+                "files": "meta/styles/stylesheet.css"
+            }
+        ]
+    },
+    "validation": {
+        "form-dup-name": "warn",
+
+        "no-deprecated-attr": "off",
+        "attr-quotes": "off",
+        "html-validate: recommended": "off",
+        "html-validate: document": "off",
+        "script-type": "off",
+        "wcag/h36": "off",
+        "prefer-button": "off",
+        "wcag/h67": "off",
+        "no-trailing-whitespace": "off",
+        "close-order": "off",
+        "no-implicit-close": "off",
+        "deprecated": "off",
+        "element-permitted-content": "off",
+        "wcag/h37": "off",
+        "prefer-tbody": "off",
+        "attr-spacing": "off",
+        "wcag/h32": "off",
+        "wcag/h30": "off"
+    }
+}

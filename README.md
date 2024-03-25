@@ -12,3 +12,4 @@ Needed but not included in the repository due to being build outputs:
 They are generated with `build`. The files in `src` are the actual source code of the final iffinity project, while the files in `script_files` get compiled by `build` into `src/meta/typescriptMain.js`, which is loaded into the final project (as a story script).
 
 Image and audio assets aren't included in the repo since they'd make it unnecessarily large, but they come with the downloaded version of the game you can get on Itch.
+
