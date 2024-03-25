@@ -101,6 +101,7 @@ function uponAlchemize(event) {
     if (matchingGameId === null) {
         console.error("You can't alchemize anything. This shouldn't actually be happening. Huh.");
     }
+    // document.getElementById("iff-story").innerHTML = `<div id="iff-snippet"></div>`; // this makes it worse
     story.showSnippet(matchingGameId);
 }
 

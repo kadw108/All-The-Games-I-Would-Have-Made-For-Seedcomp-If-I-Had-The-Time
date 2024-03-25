@@ -1,21 +1,46 @@
-<!-- [html-validate-disable-block] -->
 <snippet name="annihilationOcean" styles="meta/ifdb_files/ifdb.css" tags="noWrapper">
 
 <% 
 $(function () {
-    const snippet = document.getElementById("iff-snippet");
+    const text = document.createElement("div");
+    text.innerHTML = `
+        <p>In this game you play as an unnamed scientist, a crew member on a research expedition into a post-apocalyptic Arctic Ocean. As of the game's beginning, you are also the expedition's only survivor. What exactly happened to the other crew members is never described.</p>
 
-    const title = document.createElement("h1");
-    title.innerText = "Annihilation Ocean";
+        <p>Gameplay consists of daily chores, mainly fishing and maintenance on the ship, which gradually breaks down over time, along with the protagonist's own sanity as they endure days of isolation with no end in sight. These monotonous days are broken up by dreams that gradually reveal more of your history: a childhood spent on a post-apocalyptic Svalbard covered in overgrown skyscrapers, a bitter and negligent family salvaged by a brother who cared deeply for you, but disappeared under unknown circumstances after graduating high school. Primary among these dreams are visions of "Europa", a utopian civilization you and your brother imagined as children, which becomes a stand-in for everything lost with his disappearance. As time passes these dreams become more disturbing, and the surrounding environment more surreal.</p>
+
+        <p>The landscape is psychological, corresponding more to the protagonist's mental state than any realistic geography.</p>
+
+        <p>It's an interesting concept, but I found it difficult to care about the protagonist's struggles, which are described obliquely and without any real emotion. It's a story about misery, and ultimately rather hard to enjoy.</p>
+    `;
+    const review1 = mainScript.IfdbReview(
+        [1, 1],
+        "Surreal horror story",
+        "March 4, 2024",
+        "Anonymous",
+        text
+    );
+
+    const text2 = document.createElement("div");
+    text2.innerHTML = `
+        <p>apparently this game is 'heavily inspired by Jeff Vandermeer's Annihilation'. ok well a lot of this stuff is just straight up copied from annihilation. like the mysterious lighthouse is a ripoff of annihilation. even the title has the word annihilation in it. Just reread annihilation instead of making a lame annihilation copy bro</p>
+    `;
+    const review2 = mainScript.IfdbReview(
+        [0, 1],
+        "bro this is just straight up a knockoff of annihilation",
+        "March 4, 2024",
+        "Anonymous",
+        text2
+    );
 
     const description = document.createElement("div");
     description.innerHTML = `
         <p>Yesterday, I disposed of the other technician's body.</p>
     `;
+    const ifdbPage = mainScript.IfdbPage(
+        "Annihilation Ocean", "Anonymous", description, [review1, review2]
+    );
 
-    const ifdbPage = mainScript.genIfdbPage(
-        title, description, "annihilationOcean1"
-    )
+    const snippet = document.getElementById("iff-snippet");
     snippet.append(ifdbPage);
 });
 %>

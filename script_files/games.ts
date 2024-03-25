@@ -1,5 +1,3 @@
-import { Seed } from "./seeds"
-
 type Game = {
     id: string,
     seeds: Set<string>
@@ -25,6 +23,10 @@ const GAMES: Array<Game> = [
     {
         id: "annihilationOcean",
         seeds: new Set(["bringerOfGrainAndSeed", "europa", "thing"])
+    },
+    {
+        id: "utopianPsycho",
+        seeds: new Set(["thing"])
     }
 ];
 

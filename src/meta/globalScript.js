@@ -1,5 +1,6 @@
 $(function () {
     if (!snippet.tags.includes("noWrapper")) {
+        console.log("tag", snippet.tags);
         window.mainScript.addWrapperHtml();
     }
     window.mainScript.addReplaceLink();

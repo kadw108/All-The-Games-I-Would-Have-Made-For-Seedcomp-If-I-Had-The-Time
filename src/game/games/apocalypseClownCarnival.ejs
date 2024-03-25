@@ -1,0 +1,72 @@
+<snippet styles="meta/ifdb_files/ifdb.css" tags="noWrapper" name="apocalypseClownCarnival">
+
+<% 
+$(function () {
+    const text = document.createElement("div");
+    text.innerHTML = `
+
+        <p>Some scenes that stood out to me, particularly:</p>
+
+        <hr>
+
+        <p>The GoBots syndicate is cornering the market on batteries. They've set up in the abandoned warehouse a few miles down south of here. Place is a madhouse now, crowded with toys lusting for energy. A few packs of Duracell will get them going like a pack of wolves.</p>
+
+        <p>Day by day the Pirate Captain tracks their positions on the map. The remote control helicopters are her personal squadron. With her pirate-ship booth not working she spends nights perched on the rickety drop tower, being small and light enough to climb the ladder without fear. From there the scout helicopters send her status reports on the number of feral toys they've seen, and the progress of the GoBots as they make their slow inexorable way towards Wandaria.</p>
+
+        <hr>
+
+        <p>Wide shot. Three toys walking along the exterior of an impossibly large wall, barring them from the holy city. The wall is too many feet tall and covered in barbed wire. Dead grass shivers. The mic captures the clink, clink, clink of metallic limbs.</p>
+
+        <hr>
+
+        <p>Morning.</p>
+
+        <p>Bits of salt inch between your plastic joints. Road grit in your nerves.</p>
+
+        <p>Rows of empty train cars waiting forgotten on a overpass. Highway pitted with holes and vegetation. It stretches on through the infinite countryside, desolate. The only sign of civilization in a landscape lush with frozen crops, their iced-over leaves towering above, plunging the world into flourishing frozen decay.</p>
+    `;
+    const review1 = mainScript.IfdbReview(
+        [1, 1],
+        "Vignettes",
+        "March 4, 2024",
+        "Anonymous",
+        text
+    );
+
+    const text2 = document.createElement("div");
+    text2.innerHTML = `
+        <p>In this future, technological advancements have made digital life cheap, with AI baked into even children's toys and carnival rides. But the toys have nobody to play with them and the rides have no riders; all humanity vanished under unknown circumstances, many years ago. You eke out a lonely, isolated existence in the abandoned theme park of Wandaria, along with other automatons now left devoid of purpose. Everyone's battery life is running low. The end is near.</p>
+            
+        <p>The story proper begins when Jack, the enterprising go-kart, tells you about a rumored sanctuary city, where humans may still dwell and charging packs may still be produced by ancient factories. You and a motley crew of other toys venture out of Wandaria for the first time in years, heading for that promised land.</p>
+
+        <p>I'll save you the trouble: you probably won't survive. This game is brutally hard. From the description you might think it's primarily story-based, and it does have a lot of story, but there's a heavy roguelike-rpg component. Each toy you can recruit at the game's start has special needs and special powers, which you'll need because the world out there is a wasteland. Beautiful, yes, but also full of feral toys and mutant animals and wildfires and tornados and unmarked minefields and all kinds of things just waiting to ruin your run when you least expect it.</p>
+
+        <p>This isn't even getting started on all the ways your party can break down psychologically. Depending on who you pick for the crew, how you treat them, and which random events you roll, there are myriad ways for party members to have a mental breakdown or go catatonic or start stabbing each other in the back or sacrifice themselves for nothing. Turns out people who've been clinging onto the dregs of existence for years with no future in sight aren't very mentally balanced. And make no mistake they're people. Despite technically being mass-produced AIs, each one felt like a real, organic personality to me, with their own quirks and neuroses and tragic pasts. It made the twist of the knife worse as they inevitably succumbed to their awful fates, because I actually cared about them.</p>
+
+        <p>I've played this game seven or so times and haven't been remotely close to winning. Is there a happy ending? Who knows. I hope I get to see it someday.</p>
+        `;
+    const review2 = mainScript.IfdbReview(
+        [1, 1],
+        "Really hard roguelike",
+        "March 4, 2024",
+        "Anonymous",
+        text2
+    );
+
+    const description = document.createElement("div");
+    description.innerHTML = `
+    <p>At night, the view from the drop tower is a haze of neon fog. You can see the whole glittering panoply of rides, trellised with lights, fresco'd with false stars. The pollution in the air scintillates in a thousand colors. You could almost believe that all the humans are still alive.</p>
+
+    <p>Of course the weeds running rampant do much to impugn that notion. Ivy over the old arcade stalls, wires intertwined with vines. Everything is decaying. In the old days, each of the one hundred and thirteen rides in Wandaria had a personality. The carousels sang sweet lullabies to the children who fell asleep upon them. The swingsets asked how high you wanted to go and delighted in taking you just a bit higher, just for the thrill.</p>
+
+    <p>Their juice ran out ages ago. As toys we were built to last, but nothing lasts forever.</p>
+    `;
+    const ifdbPage = mainScript.IfdbPage(
+        "Apocalypse Clown Carnival", "Anonymous", description, [review2, review1]
+    );
+
+    const snippet = document.getElementById("iff-snippet");
+    snippet.append(ifdbPage);
+});
+%>
+</snippet>

@@ -1,0 +1,43 @@
+<snippet styles="meta/ifdb_files/ifdb.css" tags="noWrapper" name="sisterRoseAndMaryDahmer">
+
+<% 
+$(function () {
+    const text = document.createElement("div");
+    text.innerHTML = `
+    <p>This game revels too much in its own violence. Also, it really hates lesbians. Of the two people mentioned in the game's title, only one is actually a lesbian. The other person involved, you guessed it, doesn't reciprocate her advances and this only leads to worse and worse things down the line, both in-story and from an outsider's perspective as they watch the trainwreck this game becomes. The predatory lesbian stereotype is overdone and this game brings nothing new to the concept (if it's even possible to breathe new life into such a tired old homophobic trope) while only alienating people in the worst possible ways.</p>
+    
+    <p>In the setting lesbians are painted as something monstrous. You might argue it's necessary for "worldbuilding", "oh the game takes place in a nunnery beset by demons in an oppressive dark fantasy world", but why devote so much attention to the awful, disgusting caricature that is Mary Dahmer? Why is she romantically obsessed with her adopted SISTER of all people (gross), why fixate so hard on her gruesome violent fantasies and all her awful stalkerish behavior and the even worse things she can do, depending on which route you take? Like so many sleazy shock horror games, this game says nothing new about the "forbidden" topics it invokes. It's just an awful gross-out game with cardboard characters. I'm disappointed in myself for playing it to the end.</p>
+    `;
+    const review1 = mainScript.IfdbReview(
+        [3, 3],
+        "A failure of a lesbian nun horror story",
+        "March 4, 2024",
+        "Anonymous",
+        text
+    );
+
+    const text2 = document.createElement("div");
+    text2.innerHTML = `
+        <p>It's not just the gratuitous violence, it's how much the author clearly enjoys it. Bleh. Not my thing.</p>
+        `;
+    const review2 = mainScript.IfdbReview(
+        null,
+        "One of the worst things I've read this year, and that's saying a lot considering the other shit I've seen",
+        "March 4, 2024",
+        "Anonymous",
+        text2
+    );
+
+    const description = document.createElement("div");
+    description.innerHTML = `
+    <p>An attempt at a lesbian nun horror story.</p>
+    `;
+    const ifdbPage = mainScript.IfdbPage(
+        "Sister Rose and Mary Dahmer", "Anonymous", description, [review1, review2]
+    );
+
+    const snippet = document.getElementById("iff-snippet");
+    snippet.append(ifdbPage);
+});
+%>
+</snippet>

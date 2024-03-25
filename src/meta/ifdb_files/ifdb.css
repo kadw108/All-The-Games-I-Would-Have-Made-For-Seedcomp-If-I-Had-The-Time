@@ -61,8 +61,10 @@ html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 /*
@@ -70,7 +72,7 @@ CUSTOM STYLINGS FOR TWINE
 */
 #screenContents {
     background: #000000;
-    font:  100%/140% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 100%/140% Verdana, Arial, Helvetica, Sans-Serif;
     color: #ffffff;
     line-height: 1.4;
     margin: 0px 0px 1.5em 0px;
@@ -90,7 +92,7 @@ page where there are data entry fields, buttons, and so on.  We use
 the same style here as in the main page body.
 */
 form {
-    font:  100%/140% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 100%/140% Verdana, Arial, Helvetica, Sans-Serif;
 }
 
 /*
@@ -106,7 +108,7 @@ The default style for cells within tables.  We use the same style
 here as in the main page body.
 */
 table tr td {
-    font:  100%/140% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 100%/140% Verdana, Arial, Helvetica, Sans-Serif;
 }
 
 /*
@@ -129,7 +131,7 @@ Heading 1 - for top-level headings.  This is generally used for
 the title at the top of a page.
 */
 h1 {
-    font:  125% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 125% Verdana, Arial, Helvetica, Sans-Serif;
     font-weight: bold;
     color: #000080;
 }
@@ -184,7 +186,7 @@ box), so we have to specify how we want these laid out.  Throughout
 this division, we use a slightly smaller version of the main page font.
 */
 div.topctl {
-    font:  100%/140% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 100%/140% Verdana, Arial, Helvetica, Sans-Serif;
     width: 100%;
     padding: 0 0 0 0;
     margin: 0 auto 1em auto;
@@ -228,12 +230,13 @@ div.topctl table tr td {
     border: none;
     cursor: pointer;
     border-radius: 0 1em 1em 0;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     padding: 0.1em;
 }
 
-.searchbar-wrapper > button:hover, button:focus {
-    background-color: #e8e8e8
+.searchbar-wrapper > button:hover,
+button:focus {
+    background-color: #e8e8e8;
 }
 
 .main-nav {
@@ -246,25 +249,24 @@ div.topctl table tr td {
     align-items: center;
 }
 
-#main-nav-wrapper{
+#main-nav-wrapper {
     padding: 0em 1em 0em 1em;
     display: flex;
     flex-wrap: wrap;
 }
 
-.nav-right{
-   display: flex;
-   align-items: center;
+.nav-right {
+    display: flex;
+    align-items: center;
 }
 
-.nav-left{
-   display: flex;
-   align-items: center;
-   flex: 1;
+.nav-left {
+    display: flex;
+    align-items: center;
+    flex: 1;
 }
 
-
-.main-nav ul{
+.main-nav ul {
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -272,28 +274,25 @@ div.topctl table tr td {
     align-items: center;
 }
 
-.main-nav li{
+.main-nav li {
     list-style: none;
-
 }
 
-.main-nav a{
+.main-nav a {
     text-decoration: none;
     padding: 0.25em 0.75em 0.25em 0.75em;
     display: inline-block;
     white-space: nowrap;
 }
 
-.main-nav a:hover{
+.main-nav a:hover {
     text-decoration: underline;
     background-color: #dcdcdc;
 }
 
-.page-active{
+.page-active {
     font-weight: bold;
 }
-
-
 
 /*
 The "main" division is basically the rest of the page below the
@@ -309,30 +308,30 @@ div.main {
     margin: 0 auto;
 }
 
-.flexer{
+.flexer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     margin: -0.5em;
 }
 
-.column{
+.column {
     flex: 1;
     margin: 0.5em;
 }
 
-.col-sidebar{
+.col-sidebar {
     flex-basis: 16rem;
     flex-grow: 1;
 }
 
-.col-main{
+.col-main {
     flex-basis: 0;
     flex-grow: 999;
     min-width: 50%;
 }
 
-#download-advisor-aside{
+#download-advisor-aside {
     flex-basis: 30ch;
 }
 
@@ -368,7 +367,7 @@ table.botbar table tr.botbarhdr td {
     padding: 0 1em 0 1em;
     font-size: 100%;
     font-weight: bold;
-    color: #0000C0;
+    color: #0000c0;
 }
 table.botbar table tr td {
     font-size: 90%;
@@ -467,7 +466,7 @@ div.new-club {
 }
 
 .restricted {
-    background: #F0F0F0;
+    background: #f0f0f0;
     padding: 1em;
 }
 
@@ -552,8 +551,7 @@ The "tags" table style is used for displaying the list of tags
 associated with a game.
 */
 table.tags {
-    margin: 1ex 0 1em 0;
-    padding-left: .5em;
+    padding-left: 0.5em;
 }
 table.tags tr td {
     padding-right: 3em;
@@ -577,7 +575,7 @@ contents of the Download box.
 table.downloads {
     padding: 0;
     margin: 0;
-    background: #F0F0F0;
+    background: #f0f0f0;
     border: thin dotted #e0e0e0;
     width: 100%;
 }
@@ -588,7 +586,7 @@ table.downloads h3 {
     margin: 0;
 }
 table.downloads td {
-   font: 80%/140% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 80%/140% Verdana, Arial, Helvetica, Sans-Serif;
 }
 table.downloads td div.downloaditem {
     overflow: hidden;
@@ -599,7 +597,7 @@ The "downloadlist" table is a sub-table within the Download box,
 where we display the list of links to individual downloads.
 */
 table.downloadlist td {
-   padding-top: 1em;
+    padding-top: 1em;
 }
 
 /*
@@ -624,7 +622,7 @@ The "zipnote" style is used to display a description of a compression
 format (e.g., ZIP) in a Download box.
 */
 span.zipnote {
-    color: #0000C0;
+    color: #0000c0;
     font-style: italic;
 }
 div.zipnote {
@@ -638,7 +636,7 @@ The "zipstar" style shows an asterisk, dagger, etc for a compression
 format footnote in Download box.
 */
 span.zipstar {
-    color: #0000C0;
+    color: #0000c0;
 }
 
 /*
@@ -659,7 +657,7 @@ input links ("Have you played this game?").
 table.gamerightbar {
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    background: #F0F0F0;
+    background: #f0f0f0;
     border: thin dotted #e0e0e0;
     width: 100%;
     font-size: 80%;
@@ -714,7 +712,6 @@ div.notes {
     font-size: 95%;
     color: #606060;
 }
-
 
 /*
 The "microhelp" style is used for additional help notes displayed in
@@ -787,8 +784,9 @@ div#imageUploadCopyrightForm table td {
     font-size: 90%;
 }
 
-input#searchfor, #searchfor2{
-  max-width: calc(100vw - 2rem);
+input#searchfor,
+#searchfor2 {
+    max-width: calc(100vw - 2rem);
 }
 
 /*
@@ -858,7 +856,8 @@ span.browseTab {
 span.firstBrowseTab {
     border-left: 1px solid #c0c0c0;
 }
-span.activeBrowseTab, .activeBrowseTab a:hover {
+span.activeBrowseTab,
+.activeBrowseTab a:hover {
     background: #a0ffff;
     padding: 0.25em 0.75em 0.25em 0.75em;
 }
@@ -896,7 +895,7 @@ div.inset table {
 }
 div.inset table tr td {
     font-size: 90%;
-    padding: 1em .5ex 1em .5ex;
+    padding: 1em 0.5ex 1em 0.5ex;
 }
 div.inset table tr {
     padding: 0 0 0 0;
@@ -984,7 +983,9 @@ p.nosp {
     margin: 0 0 0 0;
 }
 
-p, ul, ol {
+p,
+ul,
+ol {
     max-width: 60ch;
 }
 
@@ -1088,8 +1089,8 @@ div.headline {
     width: 100%;
     background: #f8f8ff;
     border-top: thin solid #e8e8ff;
-/*    font:  110% Verdana, Arial, Helvetica, Sans-Serif;*/
-    font:  110% Georgia, Times New Roman, New York, Times, Serif;
+    /*    font:  110% Verdana, Arial, Helvetica, Sans-Serif;*/
+    font: 110% Georgia, Times New Roman, New York, Times, Serif;
     font-weight: normal;
     color: #000080;
     margin: 2em 0 1em 0;
@@ -1102,7 +1103,7 @@ div.headline1 {
 span.headlineRss {
     text-align: right;
     vertical-align: middle;
-    font:  70% Verdana, Arial, Helvetica, Sans-Serif;
+    font: 70% Verdana, Arial, Helvetica, Sans-Serif;
     font-weight: normal;
 }
 
@@ -1119,10 +1120,9 @@ span.headlineRss {
     table.halfcol tr td.firstcol {
         border-left: none;
     }
-
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
@@ -1130,7 +1130,7 @@ span.headlineRss {
     display: none;
 }
 
-.menu-toggle-button{
+.menu-toggle-button {
     display: none;
     align-items: center;
     align-self: start;
@@ -1140,13 +1140,12 @@ span.headlineRss {
     cursor: pointer;
 }
 
-.menu-toggle-button:hover{
+.menu-toggle-button:hover {
     text-decoration: underline;
     background-color: #dcdcdc;
 }
 
 @media (max-width: 75ch) {
-
     .mobile-menu .mobile-hidden {
         display: none;
     }
@@ -1155,15 +1154,15 @@ span.headlineRss {
         display: none;
     }
 
-    #main-nav-wrapper{
+    #main-nav-wrapper {
         padding: 0;
     }
 
-    .mobile-menu #mobile-menu-toggle-button{
+    .mobile-menu #mobile-menu-toggle-button {
         display: flex;
     }
 
-    .mobile-menu ul{
+    .mobile-menu ul {
         display: block;
         position: absolute;
         top: calc(55px + 2.5em);
@@ -1172,10 +1171,9 @@ span.headlineRss {
         z-index: 1;
     }
 
-    .mobile-menu ul a{
+    .mobile-menu ul a {
         width: 100%;
     }
-
 }
 
 /*
@@ -1183,8 +1181,8 @@ The "rightbar" table style is used for the little information
 boxes at the right of the home page and some other pages.
 */
 table.rightbar {
-    border-top: thin solid #e8e8FF;
-    background: #F8F8FF;
+    border-top: thin solid #e8e8ff;
+    background: #f8f8ff;
     width: 30ex;
     padding: 0 0 0 0;
     margin: 0 0 1em 1.5ex;
@@ -1200,8 +1198,8 @@ table.rightbar tr td {
 }
 
 .aside-box {
-    border-top: thin solid #e8e8FF;
-    background: #F8F8FF;
+    border-top: thin solid #e8e8ff;
+    background: #f8f8ff;
     margin-bottom: 1em;
     font-size: 0.85em;
     padding: 2px 4px 4px 4px;
@@ -1226,7 +1224,7 @@ table.rightbar tr td {
     padding: 0px;
 }
 
-#top-reviewers-widget li{
+#top-reviewers-widget li {
     list-style: none;
 }
 
@@ -1281,14 +1279,13 @@ img.cpanelBtnIcon {
 }
 div.cpanelHeading {
     margin: 0;
-    background: #E8E8FF;
+    background: #e8e8ff;
     font-weight: bold;
     font-size: 90%;
     text-align: center;
 }
 div.cpanelHeadingTop {
 }
-
 
 /*
 The "boxhead" style is used for the headline within "rightbar"
@@ -1341,7 +1338,7 @@ div.newsItemHeadline {
 }
 div.newsItemDateline {
     font-size: 85%;
-    margin: .25ex 0 .75ex 0;
+    margin: 0.25ex 0 0.75ex 0;
 }
 div.newsItemHeadline a {
     text-decoration: none;
@@ -1374,31 +1371,31 @@ span.tagAge1 {
     font-weight: 700;
 }
 span.tagAge2 {
-    color: #0000B0;
+    color: #0000b0;
     font-weight: 600;
 }
 span.tagAge3 {
-    color: #0000D0;
+    color: #0000d0;
 }
 span.tagAge4 {
-    color: #2020FF;
+    color: #2020ff;
 }
 span.tagAge5 {
-    color: #4040FF;
+    color: #4040ff;
 }
 span.tagAge6 {
-    color: #6060FF;
+    color: #6060ff;
 }
 span.tagAge7 {
-    color: #8080FF;
+    color: #8080ff;
 }
 
 /*
 Popup menus
 */
 div.popupMenu {
-    border: 1px solid #E0E0FF;
-    background: #F8F8F8;
+    border: 1px solid #e0e0ff;
+    background: #f8f8f8;
     padding: 0 0 0 0;
 }
 div.popupMenu table {
@@ -1411,7 +1408,7 @@ div.popupMenu a {
     width: 100%;
 }
 div.popupMenu a:hover {
-    background: #E0E0FF;
+    background: #e0e0ff;
 }
 
 /*
@@ -2053,7 +2050,6 @@ img.radio-checked {
     border: none;
 }
 
-
 /*
 The various star images.  The number after "star" gives the number of
 stars to show; an "h" suffix means that it's the number plus a half
@@ -2061,89 +2057,87 @@ star - e.g., star3h is 3-1/2 stars.  All of the various star graphics
 should be the same width and height.
 */
 img.star0 {
-    background: url('/img/star0.gif') no-repeat center center;
+    background: url("/img/star0.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star0h {
-    background: url('/img/star0h.gif') no-repeat center center;
+    background: url("/img/star0h.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star1 {
-    background: url('/img/star1.gif') no-repeat center center;
+    background: url("/img/star1.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star1h {
-    background: url('/img/star1h.gif') no-repeat center center;
+    background: url("/img/star1h.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star2 {
-    background: url('/img/star2.gif') no-repeat center center;
+    background: url("/img/star2.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star2h {
-    background: url('/img/star2h.gif') no-repeat center center;
+    background: url("/img/star2h.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star3 {
-    background: url('/img/star3.gif') no-repeat center center;
+    background: url("/img/star3.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star3h {
-    background: url('/img/star3h.gif') no-repeat center center;
+    background: url("/img/star3h.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star4 {
-    background: url('/img/star4.gif') no-repeat center center;
+    background: url("/img/star4.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star4h {
-    background: url('/img/star4h.gif') no-repeat center center;
+    background: url("/img/star4h.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 img.star5 {
-    background: url('/img/star5.gif') no-repeat center center;
+    background: url("/img/star5.gif") no-repeat center center;
     vertical-align: middle;
     width: 56px;
     height: 13px;
 }
 
 img.newcomment {
-    background: url('/img/newcomment.png') no-repeat center center;
+    background: url("/img/newcomment.png") no-repeat center center;
     vertical-align: middle;
     width: 16px;
     height: 16px;
 }
 
 img.listarrow {
-    background: url('/img/list-arrow.gif') no-repeat center center;
+    background: url("/img/list-arrow.gif") no-repeat center center;
     vertical-align: middle;
     width: 12px;
     height: 10px;
     border: none;
     margin-right: 0.75ex;
 }
-
-
 
 /*
 For some large tables, we use alternating background colors for rows,
@@ -2155,7 +2149,6 @@ tr.oddRow {
 tr.evenRow {
     background: #f0f0f0;
 }
-
 
 /* ------------------------------------------------------------------------ */
 /*
@@ -2209,9 +2202,8 @@ img.logo {
     margin: 0 1em 0.5ex 0;
 }
 
-
 div.sfl-game-header {
-    margin: 1.5ex 0px .25ex 0px;
+    margin: 1.5ex 0px 0.25ex 0px;
     border-top: 1px dotted #808080;
     padding-top: 1ex;
 }
@@ -2245,327 +2237,377 @@ span.sfl-save-autodesc {
     padding-left: 1em;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #000000;
-        color: #ffffff;
-    }
-    div.topbar {
-        background: url("assets/ifdb-topbar-midnight.jpg") #000030 no-repeat;
-    }
-    div.topctl {
-        background: #202040;
-        border-bottom: thin dotted #303060;
-    }
-    div.topctl ul {
-        background: #202040;
-    }
-    .menu-toggle-button {
-        filter: invert(1);
-    }
-    .searchbar-wrapper {
-        border: 2px solid black;
-    }
-    #topbar-search-go-button {
-        filter: invert(1);
-    }
-    table.downloads {
-        background: #101030;
-        border: thin dotted #303030;
-    }
-    table.downloads h3 {
-        color: #d0d0ff;
-    }
-    span.dlzipmain {
-        color: #d0d0ff;
-    }
-    span.zipnote {
-        color: #d0d0ff;
-    }
-    span.fmtnotes {
-        color: #A0A0A0;
-    }
-    div.headline {
-        background: #202030;
-        border-top: thin solid #303050;
-        color: #d0d0ff;
-    }
-    div.headline2 {
-        background: #202030;
-        border-top: thin solid #303050;
-        color: #d0d0ff;
-    }
-    table.botbar {
-        background: #101018;
-    }
-    table.botbar td {
-        border-color: #303050;
-    }
-    table.botbar table tr.botbarhdr td {
-        background: #383838;
-        color: #f0f0f0;
-    }
-    table.gamerightbar {
-        background: #101030;
-        border: thin dotted #303030;
-    }
-    table.gamerightbar td {
-        color: #d8d8d8;
-    }
-    table.gamerightbar td h3 {
-        color: #d0d0ff;
-    }
-    table.rightbar {
-        border-top: thin solid #303050;
-        background: #101030;
-    }
-    .aside-box {
-        border-top: thin solid #303050;
-        background: #101030;
-    }
-    .main-nav a:hover{
-        background-color: #2c2c52;
-    }
-    tr.boxhead h3 {
-        color: #f0f0f0;
-    }
-    .cpanelBtn:hover {
-        background: #303058;
-    }
-    div.cpanelHeading {
-        background: #303050;
-    }
-    table.botbar2 {
-        background: #101030;
-        border-top: thin solid #303050;
-    }
-    span.notes {
-        color: #c0c0c0;
-    }
-    span.notes a.silent {
-        color: #c0c0c0;
-    }
-    span.warning {
-        background: #E0E000;
-        color: #000000;
-    }
-    a {
-        color: #9090ff;
-    }
-    a.silent {
-        color: #ffffff;
-    }
-    a:visited {
-        color: #ff90ff;
-    }
-    a:hover {
-        color: #ff3030;
-    }
-    a.authorProfileLink {
-        background: #f0f0a0;
-        color: #000090;
-    }
-    a.authorProfileLink:visited {
-        color: #900090;
-    }
-    a.authorProfileLink:hover {
-        color: #ff0000;
-    }
-    div.reviewCommentReply {
-        border-left: 0.75ex solid #404040;
-    }
-    h1, h2, h3 {
-        color: #d0d0ff;
-    }
-    form.stylepicform {
-        background: #101030;
-        color: #ffffff;
-    }
-    input, select{
-        background-color: #000000;
-        color: #FFFFFF;
-        border: 1px solid #323245;
-    }
-    div.tipbox {
-        background: #101030;
-        border: 1px solid #323245;
-        color: #ffffff;
-    }
-    div.inlinetip {
-        background: #404040;
-        color: #ffffff;
-    }
-    div.edit-popup-title {
-        background: #7098a8;
-        color: #000040;
-    }
-    div.edit-popup-win {
-        border: 3px solid #7098a8;
-    }
-    div.edit-popup-win table tr td {
-        background: #ffffff;
-        color: #000000;
-    }
-    div.edit-popup-win span.details {
-        font-size: 100%;
-        color: #505050;
-    }
-    div.popupMenu {
-        border: 1px solid #A0A0A0;
-        background: #404040;
-        padding: 0 0 0 0;
-        color: #ffffff;
-    }
-    div.popupMenu a:hover {
-        background: #202020;
-    }
-    div.browseBar {
-        background: #202030;
-    }
-    div.browseTabs {
-        padding: 6px 0 0 4px;
-    }
-    span.browseLabel {
-        font-weight: bold;
-        margin-right: 2em;
-    }
-    span.browseTab {
-        background: #303050;
-        border: 1px solid #202030;
-    }
-    span.activeBrowseTab {
-        background: #444476;
-    }
-    input.go-button {
-        background: url("/dark-images/go-button-midnight.gif") no-repeat center center;
-    }
-    img.star0 {
-        background: url('/img/dark-images/star0-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star0h {
-        background: url('/img/dark-images/star0h-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star1 {
-        background: url('/img/dark-images/star1-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star1h {
-        background: url('/img/dark-images/star1h-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star2 {
-        background: url('/img/dark-images/star2-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star2h {
-        background: url('/img/dark-images/star2h-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star3 {
-        background: url('/img/dark-images/star3-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star3h {
-        background: url('/img/dark-images/star3h-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star4 {
-        background: url('/img/dark-images/star4-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star4h {
-        background: url('/img/dark-images/star4h-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.star5 {
-        background: url('/img/dark-images/star5-midnight.gif') no-repeat center center;
-        vertical-align: middle;
-        width: 56px;
-        height: 14px;
-    }
-    img.grid-move-up {
-        background: url('/img/dark-images/moveup-midnight.gif') no-repeat center center;
-    }
-    img.grid-move-down {
-        background: url('/img/dark-images/movedown-midnight.gif') no-repeat center center;
-    }
-    img.authored-list-icon {
-        background: url('/img/dark-images/authored-midnight.gif') no-repeat center center;
-    }
-    img.game-search-icon {
-        background: url('/img/dark-images/search-midnight.gif') no-repeat center center;
-    }
-    img.list-search-icon {
-        background: url('/img/dark-images/findlist-midnight.gif') no-repeat center center;
-    }
-    img.list-list-icon {
-        background: url('/img/dark-images/findlist-midnight.gif') no-repeat center center;
-    }
-    img.browse-members-icon {
-        background: url('/img/dark-images/browsemembers-midnight.gif') no-repeat center center;
-    }
-    img.random-list-icon {
-        background: url('/img/dark-images/random-midnight.gif') no-repeat center center;
-    }
-    img.member-search-icon {
-        background: url('/img/dark-images/findmember-midnight.gif') no-repeat center center;
-    }
-    img.my-profile-icon {
-        background: url('/img/dark-images/findmember-midnight.gif') no-repeat center center;
-    }
-    img.browse-games-icon {
-        background: url('/img/dark-images/browsegames-midnight.gif') no-repeat center center;
-    }
-    img.browse-lists-icon {
-        background: url('/img/dark-images/browselists-midnight.gif') no-repeat center center;
-    }
-    img.personal-page-icon {
-        background: url('/img/dark-images/personal-midnight.gif') no-repeat center center;
-    }
-    img.create-list-icon {
-        background: url('/img/dark-images/createlist-midnight.gif') no-repeat center center;
-    }
-    img.create-game-icon {
-        background: url('/img/dark-images/newgame-midnight.gif') no-repeat center center;
-    }
-    img.edit-game-icon {
-        background: url('/img/dark-images/editgame-midnight.gif') no-repeat center center;
-    }
-    img.create-review-icon {
-        background: url('/img/dark-images/review-midnight.gif') no-repeat center center;
-    }
-    img.review-list-icon {
-        background: url('/img/dark-images/editgame-midnight.gif') no-repeat center center;
-    }
-    img.list-message-icon {
-        background: url('/img/dark-images/messages-midnight.gif') no-repeat center center;
-    }
-    tr.oddRow {
-        background: #101010;
-    }
-    tr.evenRow {
-        background: #202020;
-    }
+body {
+    background: #000000;
+    color: #ffffff;
+}
+div.topbar {
+    background: url("assets/ifdb-topbar-midnight.jpg") #000030 no-repeat;
+}
+div.topctl {
+    background: #202040;
+    border-bottom: thin dotted #303060;
+}
+div.topctl ul {
+    background: #202040;
+}
+.menu-toggle-button {
+    filter: invert(1);
+}
+.searchbar-wrapper {
+    border: 2px solid black;
+}
+#topbar-search-go-button {
+    filter: invert(1);
+}
+table.downloads {
+    background: #101030;
+    border: thin dotted #303030;
+}
+table.downloads h3 {
+    color: #d0d0ff;
+}
+span.dlzipmain {
+    color: #d0d0ff;
+}
+span.zipnote {
+    color: #d0d0ff;
+}
+span.fmtnotes {
+    color: #a0a0a0;
+}
+div.headline {
+    background: #202030;
+    border-top: thin solid #303050;
+    color: #d0d0ff;
+}
+div.headline2 {
+    background: #202030;
+    border-top: thin solid #303050;
+    color: #d0d0ff;
+}
+table.botbar {
+    background: #101018;
+}
+table.botbar td {
+    border-color: #303050;
+}
+table.botbar table tr.botbarhdr td {
+    background: #383838;
+    color: #f0f0f0;
+}
+table.gamerightbar {
+    background: #101030;
+    border: thin dotted #303030;
+}
+table.gamerightbar td {
+    color: #d8d8d8;
+}
+table.gamerightbar td h3 {
+    color: #d0d0ff;
+}
+table.rightbar {
+    border-top: thin solid #303050;
+    background: #101030;
+}
+.aside-box {
+    border-top: thin solid #303050;
+    background: #101030;
+}
+.main-nav a:hover {
+    background-color: #2c2c52;
+}
+tr.boxhead h3 {
+    color: #f0f0f0;
+}
+.cpanelBtn:hover {
+    background: #303058;
+}
+div.cpanelHeading {
+    background: #303050;
+}
+table.botbar2 {
+    background: #101030;
+    border-top: thin solid #303050;
+}
+span.notes {
+    color: #c0c0c0;
+}
+span.notes a.silent {
+    color: #c0c0c0;
+}
+span.warning {
+    background: #e0e000;
+    color: #000000;
+}
+a {
+    color: #9090ff;
+}
+a.silent {
+    color: #ffffff;
+}
+a:visited {
+    color: #ff90ff;
+}
+a:hover {
+    color: #ff3030;
+}
+a.authorProfileLink {
+    background: #f0f0a0;
+    color: #000090;
+}
+a.authorProfileLink:visited {
+    color: #900090;
+}
+a.authorProfileLink:hover {
+    color: #ff0000;
+}
+div.reviewCommentReply {
+    border-left: 0.75ex solid #404040;
+}
+h1,
+h2,
+h3 {
+    color: #d0d0ff;
+}
+form.stylepicform {
+    background: #101030;
+    color: #ffffff;
+}
+input,
+select {
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #323245;
+}
+div.tipbox {
+    background: #101030;
+    border: 1px solid #323245;
+    color: #ffffff;
+}
+div.inlinetip {
+    background: #404040;
+    color: #ffffff;
+}
+div.edit-popup-title {
+    background: #7098a8;
+    color: #000040;
+}
+div.edit-popup-win {
+    border: 3px solid #7098a8;
+}
+div.edit-popup-win table tr td {
+    background: #ffffff;
+    color: #000000;
+}
+div.edit-popup-win span.details {
+    font-size: 100%;
+    color: #505050;
+}
+div.popupMenu {
+    border: 1px solid #a0a0a0;
+    background: #404040;
+    padding: 0 0 0 0;
+    color: #ffffff;
+}
+div.popupMenu a:hover {
+    background: #202020;
+}
+div.browseBar {
+    background: #202030;
+}
+div.browseTabs {
+    padding: 6px 0 0 4px;
+}
+span.browseLabel {
+    font-weight: bold;
+    margin-right: 2em;
+}
+span.browseTab {
+    background: #303050;
+    border: 1px solid #202030;
+}
+span.activeBrowseTab {
+    background: #444476;
+}
+input.go-button {
+    background: url("/dark-images/go-button-midnight.gif") no-repeat center center;
+}
+img.star0 {
+    background: url("/img/dark-images/star0-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star0h {
+    background: url("/img/dark-images/star0h-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star1 {
+    background: url("/img/dark-images/star1-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star1h {
+    background: url("/img/dark-images/star1h-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star2 {
+    background: url("/img/dark-images/star2-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star2h {
+    background: url("/img/dark-images/star2h-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star3 {
+    background: url("/img/dark-images/star3-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star3h {
+    background: url("/img/dark-images/star3h-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star4 {
+    background: url("/img/dark-images/star4-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star4h {
+    background: url("/img/dark-images/star4h-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.star5 {
+    background: url("/img/dark-images/star5-midnight.gif") no-repeat center center;
+    vertical-align: middle;
+    width: 56px;
+    height: 14px;
+}
+img.grid-move-up {
+    background: url("/img/dark-images/moveup-midnight.gif") no-repeat center center;
+}
+img.grid-move-down {
+    background: url("/img/dark-images/movedown-midnight.gif") no-repeat center center;
+}
+img.authored-list-icon {
+    background: url("/img/dark-images/authored-midnight.gif") no-repeat center center;
+}
+img.game-search-icon {
+    background: url("/img/dark-images/search-midnight.gif") no-repeat center center;
+}
+img.list-search-icon {
+    background: url("/img/dark-images/findlist-midnight.gif") no-repeat center center;
+}
+img.list-list-icon {
+    background: url("/img/dark-images/findlist-midnight.gif") no-repeat center center;
+}
+img.browse-members-icon {
+    background: url("/img/dark-images/browsemembers-midnight.gif") no-repeat center center;
+}
+img.random-list-icon {
+    background: url("/img/dark-images/random-midnight.gif") no-repeat center center;
+}
+img.member-search-icon {
+    background: url("/img/dark-images/findmember-midnight.gif") no-repeat center center;
+}
+img.my-profile-icon {
+    background: url("/img/dark-images/findmember-midnight.gif") no-repeat center center;
+}
+img.browse-games-icon {
+    background: url("/img/dark-images/browsegames-midnight.gif") no-repeat center center;
+}
+img.browse-lists-icon {
+    background: url("/img/dark-images/browselists-midnight.gif") no-repeat center center;
+}
+img.personal-page-icon {
+    background: url("/img/dark-images/personal-midnight.gif") no-repeat center center;
+}
+img.create-list-icon {
+    background: url("/img/dark-images/createlist-midnight.gif") no-repeat center center;
+}
+img.create-game-icon {
+    background: url("/img/dark-images/newgame-midnight.gif") no-repeat center center;
+}
+img.edit-game-icon {
+    background: url("/img/dark-images/editgame-midnight.gif") no-repeat center center;
+}
+img.create-review-icon {
+    background: url("/img/dark-images/review-midnight.gif") no-repeat center center;
+}
+img.review-list-icon {
+    background: url("/img/dark-images/editgame-midnight.gif") no-repeat center center;
+}
+img.list-message-icon {
+    background: url("/img/dark-images/messages-midnight.gif") no-repeat center center;
+}
+tr.oddRow {
+    background: #101010;
+}
+tr.evenRow {
+    background: #202020;
+}
+
+/* INLINE HTML STYLES TAKEN FROM SOURCE CODE */
+
+.reviews__moreOptions {
+    display: inline;
+    position: relative;
+}
+.reviews__voteMenu {
+    display: none;
+    position: absolute;
+    left: 0px;
+    z-index: 20000;
+}
+.reviews__separator {
+    height: 1ex;
+}
+
+.viewgame__foundGame {
+    position: relative;
+}
+.viewgame__playOnline {
+    margin: 0px 0px 0.3em 0px;
+    cursor: pointer;
+}
+
+.viewgame__mainSummary {
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    font-weight: bold;
+}
+a.authorName {
+    text-decoration: underline;
+}
+
+#returnButton {
+    padding: 10px;
+    cursor: pointer;
+}
+#returnButton > h3 {
+    color: #000;
+    margin: 0;
+}
+
+body {
+    font: 100%/140% Verdana, Arial, Helvetica, Sans-Serif;
 }

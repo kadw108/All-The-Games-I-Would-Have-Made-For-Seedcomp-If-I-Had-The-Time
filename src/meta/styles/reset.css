@@ -104,9 +104,9 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-body > div, span {
+/* body > div, span {
   margin: 3px 0 3px 0;
-}
+} */
 
 h4, p, blockquote, ul, fieldset, form, ol, dl, dir, menu {
   margin: 1.5em 0;

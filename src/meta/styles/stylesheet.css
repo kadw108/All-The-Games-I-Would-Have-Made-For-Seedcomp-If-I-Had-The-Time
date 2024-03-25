@@ -9,53 +9,53 @@ GENERAL STYLE
     --color2: #fff;
     --shadow: #ddd;
 
-  	--screenheight: 675px;
-  	--screenwidth: 765px;
-  	--screenheightbig: 700px;
-  	--screenwidthbig: 800px;
+    --screenheight: 675px;
+    --screenwidth: 765px;
+    --screenheightbig: 700px;
+    --screenwidthbig: 800px;
 }
 
 /* Background */
-#bg {
-  height: 100%;
-  width: 100%;
+#screenCover {
+    z-index: -1;
+    background-color: #ffffff;
 
-  position: fixed;
-  top: 0;
-  left: 0;
-
-  z-index: -1;
-  
-  /* background-image: url("assets/background.png"); */
-  background-color: #eeeeee;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 /* Passage container */
-#passages {
-  /* margin: 10px auto auto auto; */
-  padding: 15px;
+#contents {
+    /* margin: 10px auto auto auto; */
+    padding: 15px;
 
-  height: 100vh;
-  
-  /* Prevent images from extending past div bounds
+    /* Prevent images from extending past div bounds
   object-fit: cover;
   overflow: hidden;
   */
 
-  /* background-color: #ffffff; */
-  
-  font-size: 100%;
-  /* font-family: "MonoFont", monospace; */
-  font-family: "Roboto", sans-serif;
+    /* background-color: #ffffff; */
 
-  position: relative;
+    font-size: 100%;
+    /* font-family: "MonoFont", monospace; */
+    font-family: "Roboto", sans-serif;
+
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+}
+#iff-snippet {
+    overflow: scroll;
+    height: 100%;
 }
 
-@media only screen 
-and (max-width: 600px) {
-  #passages {
-    width: 100%;
-  }
+@media only screen and (max-width: 600px) {
+    #passages {
+        width: 100%;
+    }
 }
 /*
 @media only screen
@@ -66,178 +66,111 @@ and (max-height: 800px) {
   }
 } */
 
-/* For passages themselves */
-.passage {
-  /* overflow: auto; */
-  height: 100%;
-  width: 100%;
-  position: relative; /* See https://stackoverflow.com/a/46318225
-  - this sets .passage div as reference point for children position: absolute divs*/
-}
-
-#screenBg {
-  width: 100%;
-  height: 100%;
-
-  background-color: #ffffff;
-  background-size: cover;
-  background-position: center;
- 
-  /*
-  border: 2px solid white;
-  border-image: url(assets/white3.gif);
-  border-image-slice: 4;
-  */
-
-  position: relative;
-  z-index: 0;
-}
-
-#screenContents {
-  width: 100%;
-  height: 100%;
-  margin: auto;
-}
-div .topHalf {
-  width: 100%;
-  height: 50%;
-  bottom: 50%;
-  margin: auto;
-}
-div .topHalf img {
-  width: 100%;
-  height: 100%;
-}
-div .bottomHalf, div .bothHalves {
-  width: 100%;
-  height: 100%;
-  bottom: 0%;
-  top: auto;
-  min-height: 350px;
-
-  margin: auto;
-
-  padding: 10px;
-  padding-bottom: 25px;
-  overflow: scroll;
-}
-div .bottomHalf {
-  height: 50%;
-  bottom: 0%;
-  top: auto;
-
-  border-image: url("assets/black1.gif");
-  border-color: #222;
-  border-image-slice: 8;
-  border-width: 7px;
-  border-image-repeat: repeat;
-}
-
 /*
 CUSTOM STYLES
 */
 
 .menuPanel {
-  overflow: scroll;
-  padding: 10px;
+    overflow: scroll;
+    padding: 10px;
 
-  margin: 5%;
-  background-color: #fff;
-  border: 3px double #bbb;
-  font-size: 0.9rem;
+    margin: 5%;
+    background-color: #fff;
+    border: 3px double #bbb;
+    font-size: 0.9rem;
 
-  z-index: 5;
+    z-index: 5;
 }
 .menuPanel img {
-  width: 100%;
-  margin: auto;
+    width: 100%;
+    margin: auto;
 }
 .menuPanel img.small {
-  max-width: 400px;
+    max-width: 400px;
 }
 .menuPanel > div {
-  margin: 7px;
+    margin: 7px;
 }
 .menuPanel > embed {
-  width: 80%;
-  min-height: 500px;
-  height: 100%;
+    width: 80%;
+    min-height: 500px;
+    height: 100%;
 }
 
 .hoverDiv {
-  position: absolute;
-  z-index: 3;
-  line-height: 100%;
-  padding: 4px;
+    position: absolute;
+    z-index: 3;
+    line-height: 100%;
+    padding: 4px;
 
-  display: none;
+    display: none;
 }
 
 .outlineDiv {
-  outline: none;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255,255,255,.4);
-  border-radius: 5px;
-  box-shadow: 0 1px 2px rgba(0,0,0,.2),inset 0 -1px 2px #fff;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2), inset 0 -1px 2px #fff;
 
-  color: #222;
-  border: solid 1px #aaa;
-  background: #000;
+    color: #222;
+    border: solid 1px #aaa;
+    background: #000;
 }
 
 .blackBg {
-  color: #222;
-  background-color: black;
-  border: 2px solid white;
+    color: #222;
+    background-color: black;
+    border: 2px solid white;
 }
 
 .absoluteAlign {
-  position: absolute;
+    position: absolute;
 
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
 }
 
 .gray {
-  color: #666;
-  text-decoration: underline;
+    color: #666;
+    text-decoration: underline;
 }
 .gray:hover {
-  color: #aaaaaa;
+    color: #aaaaaa;
 }
 
 .red-text {
-  color: #ff0000;
-  text-decoration: underline;
+    color: #ff0000;
+    text-decoration: underline;
 }
 .green-text {
-  color: #00ff00;
-  text-decoration: underline;
+    color: #00ff00;
+    text-decoration: underline;
 }
 
 .smalltext {
-  color: #777777;
-  font-size: 0.8em;
+    color: #777777;
+    font-size: 0.8em;
 }
 
-.noClick{
-  pointer-events: none;
+.noClick {
+    pointer-events: none;
 }
 
 .hidden {
-  display: none;
+    display: none;
 }
 
 .transitionMessage {
-  font-style: italic;
-  font-size: 80%;
+    font-style: italic;
+    font-size: 80%;
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 /*
@@ -245,115 +178,124 @@ OVERRIDING DEFAULT CSS STYLES
 */
 
 body {
-  color: #222;
-  word-wrap: break-word;
+    color: #222;
+    background-color: #ffffff;
+    word-wrap: break-word;
 }
 
 small {
-  font-size: 70%;
+    font-size: 70%;
 }
 
 /* For replacelink */
 .initial {
-  color: #eeeeee;
+    color: #eeeeee;
 }
 .initial:hover {
-  color: #666666;
+    color: #666666;
 }
 
 a:not([data-snippet]) {
-  font-weight: bold;
-  color: inherit;
-  text-decoration: inherit;
-  cursor: pointer;
+    font-weight: bold;
+    color: inherit;
+    text-decoration: inherit;
+    cursor: pointer;
 }
 a[data-snippet] {
-  color: #809fdd;
-  text-decoration: underline;
-  text-underline-offset: 3px;
+    color: #809fdd;
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 a:hover {
-  text-decoration: inherit;
-  color: #446699;
+    text-decoration: inherit;
+    color: #446699;
 }
 .hiddenLink a {
-  font-weight: inherit;
-  text-decoration: inherit;
-  color: inherit;
+    font-weight: inherit;
+    text-decoration: inherit;
+    color: inherit;
 }
 a.outsideLink {
-  color: #aac0cf;
+    color: #aac0cf;
 }
 a.outsideLink:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 div {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 hr {
-  height: 0px;
-  margin: 3px 0;
+    height: 0px;
+    margin: 3px 0;
 }
 
 button {
-  background-color: #ccc;
-  color: #222;
-  cursor: pointer;
+    background-color: #ccc;
+    color: #222;
+    cursor: pointer;
 
-  /* font-family: 'MonoFont', monospace; */
-  font-family: "Roboto", sans-serif;
-  margin: 5px;
+    /* font-family: 'MonoFont', monospace; */
+    font-family: "Roboto", sans-serif;
+    margin: 5px;
 }
 button:hover {
-  background-color: #444;
+    background-color: #444;
 }
-.linkReplaced, .linkHider {
-  cursor: pointer;
+.linkReplaced,
+.linkHider {
+    cursor: pointer;
 }
 
 /* CUSTOM STYLINGS (because reset.css) */
 
 h1 {
-  font-size: 225%;
+    font-size: 225%;
 }
 h2 {
-  font-size: 175%;
+    font-size: 175%;
 }
 h3 {
-  font-size: 150%;
+    font-size: 150%;
 }
 h4 {
-  font-size: 115%;
+    font-size: 115%;
 }
 h5 {
-  font-size: 110%;
+    font-size: 110%;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin: 15px 0 15px 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: bold;
+    margin: 15px 0 15px 0;
 }
-h4, h5 {
-  margin: 9px 0 9px 0;
+h4,
+h5 {
+    margin: 9px 0 9px 0;
 }
 h6 {
-  margin: 3px 0 3px 0;
+    margin: 3px 0 3px 0;
 }
 
-body > div, span {
-  margin: 3px 0 3px 0;
-}
+/* body > div,
+span {
+    margin: 3px 0 3px 0;
+} */
 
 p {
-  margin: 12px 0 12px 0;
+    margin: 12px 0 12px 0;
 }
 li {
-  margin: 12px 0 12px 0;
+    margin: 12px 0 12px 0;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 /* Fonts */

@@ -1,15 +1,73 @@
-<snippet tags="defaultStyle" name="mushroomStory3">
+<snippet styles="meta/ifdb_files/ifdb.css" tags="noWrapper" name="mushroomStory3">
 
-This game is called Unfinished Mushroom Story 3, since I have two other, different stories about mushrooms that are also unfinished. They may or may not all have the same setting: a post-apocalyptic world ridden by (you guessed it) mushrooms.
+<% 
+$(function () {
+    const text = document.createElement("div");
+    text.innerHTML = `
+        <p>This game is set in a post-apocalyptic world ridden by (you guessed it) mushrooms. The crux of the setting is that the apocalypse isn't really an apocalypse. In fact, the spread of fungal life has made life better for every living creature on Earth, with the exception of a few humans who are abnormally attached to the old way of going about things.</p>
 
-I like mushrooms.
+        <p>In this one, you're the companion or servant of a mycelial entity called the daughter of annelids. With it by your side, you investigate the spread of an unusual species of mold in an old woman's house.</p>
 
-The crux of the setting is that the apocalypse isn't really an apocalypse. In fact, the spread of fungal life has made life eminently more tolerable for every living creature on Earth, with the exception of a few humans who are abnormally attached to the old way of going about things, to a psychologically damaging degree.
+        <p>The woman is one of those people who remains attached to her old life. Where normal members of the mycelial network dream of mingling their spores over rotting corpses and so on, she dreams about investment banking. Her dreams infect the surrounding fungi of her home, and now anyone who approaches the house begins to hallucinate leverage ratios, W-12 forms, and tax-exempt money market funds. Most fungoids find this deeply disturbing.</p>
 
-In this one, you're the companion or servant of a mycelial entity called the Daughter of Annelids. With it by your side, you investigate the spread of an unusual species of mold in an old woman's house.
+        <p>You, as a human, remember the past world and therefore have a higher tolerance for this kind of thing. Together with your eldritch fungal companion, you have to resolve the woman's issues.</p>
 
-The old woman is one of those people who remains attached to her old life. Where normal members of the mycelial network dream of mingling their spores over rotting corpses and so on, she dreams about investment banking. Her dreams infect the surrounding fungi of her home, and now anyone who approaches the house begins to hallucinate leverage ratios, W-12 forms, and tax-exempt money market funds. Most fungoids find this deeply disturbing.
+        <p>The game is okay, I guess. But too short to give us a good idea of the setting. I wish there was more.</p>
+    `;
+    const review1 = mainScript.IfdbReview(
+        null,
+        "Cool setting",
+        "March 4, 2024",
+        "Anonymous",
+        text
+    );
 
-You, as a human, remember the past world and therefore have a higher tolerance for this kind of thing. Together with your eldritch fungal companion, you do... something. Haven't quite worked out the endings yet.
+    const text2 = document.createElement("div");
+    text2.innerHTML = `
+        <p>liked the poem the author used at the start</p>
 
+        <p>Rock-a-bye baby, in these twilight glooms,<br>
+        Borne of autumn, when the star-wind pours<br>
+        Down hilltop streets, quiet out-of-doors,<br>
+        But shewing lamplight from nursery rooms.<br>
+        The dead leaves rush in strange, merry twists,<br>
+        And chimney-smoke whirls round with alien grace,<br>
+        Heeding geometries of outer space,<br>
+        While Fomalhaut peers in through southward mists.<br>
+        <br>
+        This is the hour when moonstruck children know<br>
+        What fungi sprout in Yuggoth, and what scents<br>
+        And tints of flowers fill Nithon’s continents,<br>
+        Such as in no poor earthly garden blow.<br>
+        Listen now for the dreams these winds convey.<br>
+        Sleep, and let them take you far away.</p>
+        `;
+    const review2 = mainScript.IfdbReview(
+        [0, 1],
+        "cool poem",
+        "March 4, 2024",
+        "Anonymous",
+        text2
+    );
+
+    const description = document.createElement("div");
+    description.innerHTML = `
+        <p>The daughter of annelids blinks its thousands of eyes at you. It drifts to your side, throbbing, pulsating, buoyed by gas sacs and clouds of sporedust that hold its spherical body aloft. <em>We are interested in seeing how you will handle this problem,</em> it says.</p>
+
+        <p>"You won't lead here?" you ask.</p>
+
+        <p><em>No. Perhaps we are, as you say, "not feeling up to it right now". Perhaps this is a test. Who's to know?</em></p>
+
+        <p>"A test?"</p>
+
+        <p><em>It is true that if you are to proceed with further integration, we would like to see a little more of how you handle situations like this. Fret not; every answer is correct.</em><p>
+    `;
+    const ifdbPage = mainScript.IfdbPage(
+        "Untitled Mushroom Story", "Anonymous", description, [review1, review2]
+    );
+
+    const snippet = document.getElementById("iff-snippet");
+    snippet.append(ifdbPage);
+});
+%>
 </snippet>

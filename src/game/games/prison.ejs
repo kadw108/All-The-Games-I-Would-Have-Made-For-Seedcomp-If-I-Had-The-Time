@@ -1,0 +1,55 @@
+<snippet styles="meta/ifdb_files/ifdb.css" tags="noWrapper" name="prison">
+
+<% 
+$(function () {
+    const text = document.createElement("div");
+    text.innerHTML = `
+        <p>The story prompt used by this game (Room; Closed Door) requires that the writing contain no verbs. Only nouns and adjectives. But this game takes it one step further by including very few words at all. It inherits from roguelikes and word poems, forming two-dimensional maps of space with words as visual representations for obstacles and interactable entities. It portrays confinement and claustrophobia, dramatic and horrifying scenarios, solely through nondescript symbols. They might be familiar to anyone who plays roguelikes: you see # encasing @ signs. @ pushing boulders in a line, with only the rumble of stone against stone an indicator to what the symbols on screen entail.</p>
+
+        <p>
+            On the story level, this is a game about recursion: the end ties back into the beginning. There is, as the ending reveals, no escape. Outside the prison you strive to conquer is a larger prison, and outside that a larger prison, and so on and so on, ad infinitum. Beyond the wall you spend days digging through, as the sun rises and sets beyond the bounds of the prison, is only a larger, thicker wall.
+        </p>
+
+        <p>
+            I suppose the "message" of the game is that trying to escape is its own reward - even if escape is impossible. This is expanded on if you read the story that inspired this game, according to the author: The Long Sheet, by William Samsom. Without spoiling too much, The Long Sheet is also about a group of prisoners doomed to a Sisyphean torture, repeating the same actions again and again to no avail. The ending is also similar.
+        </p>
+    `;
+    const review1 = mainScript.IfdbReview(
+        null,
+        "Enigmatic prison breakout",
+        "March 4, 2024",
+        "Anonymous",
+        text
+    );
+
+    const text2 = document.createElement("div");
+    text2.innerHTML = `
+        <p>I'll be honest, this game did not jive with me. It's very experimental. I admire how the author is clearly trying to strike out and achieve something new, but in the end it was just... eh. Too many symbols, and too often I had no clue what was happening. It's a shame, because it's an interesting concept and I think it could've worked out much better if there was more time spent clarifying exactly what's going on onscreen.
+        `;
+    const review2 = mainScript.IfdbReview(
+        [1, 1],
+        "Not my thing",
+        "March 4, 2024",
+        "Anonymous",
+        text2
+    );
+
+    const description = document.createElement("div");
+    description.innerHTML = `<div style="font-family: monospace">
+        <pre>
+        ########
+        # you  #
+        #      #
+        ########
+        </pre>
+    </div>`;
+    const ifdbPage = mainScript.IfdbPage(
+        "Prison", "Anonymous", description, [review2, review1]
+    );
+
+    const snippet = document.getElementById("iff-snippet");
+    snippet.append(ifdbPage);
+
+});
+%>
+</snippet>
