@@ -1,6 +1,6 @@
 ## [Play Here](https://kanderwund.itch.io/ifdb)
 
-Contains source code for All The Games I Would Have Made For Seedcomp If I Had The Time (Which I Did Not) (Oh Well There's Always Next Year), an interactive fiction game originally made for [Seedcomp 2024](https://itch.io/jam/seedcomp24-sprouting-round).
+Contains source code for **All The Games I Would Have Made For Seedcomp If I Had The Time (Which I Did Not) (Oh Well There's Always Next Year)**, an interactive fiction game originally made for [Seedcomp 2024](https://itch.io/jam/seedcomp24-sprouting-round).
 
 The game was made with <a href="https://github.com/zehanort/iffinity">iffinity</a>, a Tweego-like interactive fiction engine by Sotiris Niarchos.
 
